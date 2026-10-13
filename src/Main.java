@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        List<Point> points = Point.readPoints(scanner, 3);
+        List<Point> points = Point.readPoints(scanner, 5);
         ICalcDistance[] calculators = {
                 new EuclideanMethodCalc(),
                 new VonNeumannCalc(),
