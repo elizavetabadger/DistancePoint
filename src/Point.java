@@ -23,12 +23,17 @@ public class Point {
         List<Point> points = new ArrayList<>();
 
         for (int i = 0; i < count; i++) {
-            System.out.printf("Введите координаты точки %d (x y): ", i + 1);
+            System.out.printf("Введите координаты точки (x y): ", i + 1);
             int x = scanner.nextInt();
             int y = scanner.nextInt();
             points.add(new Point(x, y));
         }
 
         return points;
+    }
+
+    @Override
+    public String toString() {
+        return "(" + x + ", " + y + ")";
     }
 }
