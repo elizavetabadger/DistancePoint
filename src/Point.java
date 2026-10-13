@@ -23,7 +23,7 @@ public class Point {
         List<Point> points = new ArrayList<>();
 
         for (int i = 0; i < count; i++) {
-            System.out.printf("Введите координаты точки (x y): ", i + 1);
+            System.out.println("Введите координаты точки " + (i + 1)+" (x y) :");
             int x = scanner.nextInt();
             int y = scanner.nextInt();
             points.add(new Point(x, y));
