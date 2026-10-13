@@ -18,12 +18,10 @@ public class Main {
 
             Point[] pair = service.shortestDistance(points, calculator);
             double shortestDistance = calculator.calcDistance(pair[0], pair[1]);
-            double totalDistance = service.totalDistance(points, calculator);
 
             String methodName = calculator.getClass().getSimpleName();
 
             System.out.println("Кратчайшее расстояние: " + shortestDistance + " между точками " + pair[0] + " и " + pair[1] + " по методу " + methodName);
-            System.out.println("Общее расстояние по методу " + methodName + ": " + totalDistance);
         }
     }
 }
