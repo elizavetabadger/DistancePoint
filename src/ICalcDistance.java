@@ -1,3 +1,3 @@
 public interface ICalcDistance {
-    double calculate(Point a, Point b);
+    double calcDistance(Point a, Point b);
 }
