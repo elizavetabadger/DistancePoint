@@ -2,7 +2,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main() {
         Scanner scanner = new Scanner(System.in);
         List<Point> points = Point.readPoints(scanner, 3);
 
@@ -19,9 +19,7 @@ public class Main {
 
         DistanceMethods service = new DistanceMethods();
 
-        for (int i = 0; i < calculators.length; i++) {
-            ICalcDistance calculator = calculators[i];
-
+        for (ICalcDistance calculator : calculators) {
             Point[] pair = service.shortestDistance(points, calculator);
             double shortestDistance = calculator.calcDistance(pair[0], pair[1]);
 
